@@ -71,3 +71,42 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## History
+
+167 nest new nestjs-plusts
+168 ls
+170 cd nestjs-plusts
+171 code .
+172 npm run start:dev
+173 git status
+174 git add .
+177 git commit -m"chore: initial commit"
+178 git branch -M main
+179 git remote add origin https://github.com/hwangmindo/nestjs_plus.git
+180 git push -u origin main
+181 npm i --save @nestjs/config
+182 npm run start:dev
+183 npm install --save joi
+184 lsof -i
+185 netstat -ano
+186 netstat -ano | grep 3020
+187 pkill 18112
+188 kill 18112
+189 netstat -ano | grep 3020
+190 sudo kill 18112
+191 taskkill -F -PID 18112
+192 netstat -ano | grep 3020
+193 ls
+194 cd nestjs-plusts
+195 code .
+196 npm i bcrypt
+197 npm i -D @types/bcrypt
+198 npm run start:dev
+199 npm i --save @nestjs/passport passport passport-local
+200 npm i --save-dev @types/passport-local
+201 npm run start:dev
+202 ls
+203 cd nestjs-plusts
+204 code .
+205 npm run start:dev

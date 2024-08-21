@@ -1,0 +1,11 @@
+### 회원가입 (Rest Client 설치)
+
+POST http://localhost:3020/api/auth/sign-up
+Content-Type: application/json
+
+{
+	"email": "windo0602@naver.hom",
+	"password": "Mindo0602!",
+	"passwordConfirm": "Mindo0602!",
+	"nickname": "황민도"
+}

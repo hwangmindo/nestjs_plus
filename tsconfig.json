@@ -16,6 +16,8 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true // 아래 설명
+    // CommonJS 스타일로 설정된 모듈을 ES6 스타일로 임포트해서 사용할수 있도록 한다.
   }
 }

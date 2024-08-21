@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "plugins": [
+      # plugins: @APIproperty 데코레이터로 하나씩 지정 안하여도 됨
+      {
+        "name": "@nestjs/swagger",
+        "options": {
+          # classValidatorShim: dto 클래스에 적용된 class-validator 데코레이터를 자동으로 읽어서 swagger 스키마에 반영
+          "classValidatorShim": true,
+          # introspectComments: 소스 코드 내 주석을 분석하여 swagger 문서에 반영
+          "introspectComments": true,
+          # dtoKeyOfComment: Dto 클래스의 주석을 swagger에서 어떻게 사용할지 지정하는 옵션 아래는 description 속성으로 반영
+          "dtoKeyOfComment": "description",
+          # controllerKeyOfComment: 컨트롤러 또는 메서드에 달린 주석 지정하는 옵션
+          # summary: 요약 설명으로 반영(엔드포인트)
+          "controllerKeyOfComment": "summary"
+        }
+      }
+    ]
+  }
+}
+# 주석형식은 아래와 같다. 주의: 주석은 해당 데코레이터 맨 상위에 있어야 한다.
+  /**
+   * 비밀번호 확인
+   * @example "Mindo0602!"
+   */
+
+
